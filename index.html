@@ -125,11 +125,6 @@
         </div>
         <!-- If we need pagination -->
         <div class="swiper-pagination"></div>
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-        <!--If we need scrollbar -->
-        <div class="swiper-scrollbar"></div>
       </div>
     </div>
   </section>
@@ -210,10 +205,27 @@
     </div>
   </section>
 
-  section.consult>.wrapper>h2.consult__header+p.consult__working-hours+.consult-block>(.consult__text>(p.consult__text-call+a.consult-phone-call))+form.consult-form>(p.consult-form__text+((fieldset.consult-form__fields>input.consult-form__input*4)+input.consult-form__rules-input+p.consult-form__rules>span.consult-form__rules_blue))
-
-
-
+  <footer class="consult">
+    <div class="wrapper">
+      <h2 class="consult__header">Узнайте о выгодных предложениях и получите личную консультацию</h2>
+      <p class="consult__working-hours">По любым возникающим Вами
+        вопросов звоните нам напрямую</p>
+      <div class="consult-block">
+        <div class="consult__text">
+          <p class="consult__text-call"></p>
+          <a href="" class="consult-phone-call"></a>
+        </div>
+        <form action="" class="consult-form">
+          <p class="consult-form__text"></p>
+          <fieldset class="consult-form__fields"><input type="text" class="consult-form__input"><input type="text"
+              class="consult-form__input"><input type="text" class="consult-form__input"><input type="text"
+              class="consult-form__input"></fieldset>
+          <input type="text" class="consult-form__rules-input">
+          <p class="consult-form__rules"><span class="consult-form__rules_blue"></span></p>
+        </form>
+      </div>
+    </div>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="js/script.js"></script>
@@ -256,7 +268,7 @@
       );
       // Размещение геообъекта на карте.
       myMap.geoObjects.add(myPlacemark);
-      // myMap.geoObjects.add(myPlacemarkShop);
+      myMap.geoObjects.add(myPlacemarkShop);
     }
 
   </script>
