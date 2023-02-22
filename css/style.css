@@ -1,0 +1,61 @@
+.main-section {
+  height: 880px;
+  background-image: url(/assets/images/main-block.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#map {
+  height: 663px;
+  position: relative;
+  background-image: url(/assets/images/yandex-map.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 0.5s ease;
+}
+
+.descr-gallery {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 50vh;
+  grid-gap: 10px;
+  grid-template-areas: "active active small-2" "active active small-3" "active active small-4";
+}
+
+.descr-gallery__item_park {
+  background-image: url(/assets/images/tab-img-1.png);
+  grid-area: small-1;
+}
+
+.descr-gallery__item_arch {
+  background-image: url(/assets/images/tab-img-2.png);
+  grid-area: small-2;
+}
+
+.descr-gallery__item_secure {
+  background-image: url(/assets/images/tab-img-3.png);
+  grid-area: small-3;
+}
+
+.descr-gallery__item_terr {
+  background-image: url(/assets/images/tab-img-4.png);
+  grid-area: small-4;
+}
+
+.descr-gallery__item_active {
+  flex-basis: 60%;
+  width: 100%;
+  height: 100%;
+  width: 848px;
+  height: 573px;
+  grid-area: active;
+}
+
+/*# sourceMappingURL=style.css.map */
